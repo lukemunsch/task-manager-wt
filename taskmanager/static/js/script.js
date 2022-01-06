@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   M.Sidenav.init(sidenav);
 
   // date picker code
-  let datepicker = document.querySelectorAll('.datepicker');
+  let datepicker = document.querySelectorAll(".datepicker");
   M.Datepicker.init(datepicker, {
-    format: "DD MMMM, YYYY",
+    format: "dd mmmm, yyyy",
     i18n: {
       done: "Select"
     }
