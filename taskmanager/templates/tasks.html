@@ -11,4 +11,20 @@
     </div>
 </div>
 
+<!-- view all tasks -->
+<ul class="collapsible">
+    {% for task in tasks %}
+    <li>
+        <div class="collapsible-header white-text light-green darken-4">
+            <i class="fas fa-caret-down"></i>
+            {{ task.task_name }} : {{ task.due_date }}
+            {% if task.is_urgent == True %}
+                <i class="fas fa-exclamation-circle light-green-text text-lighten-2"></i>
+            {% endif %}
+        </div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    {% endfor %}
+</ul>
+
 {% endblock %}

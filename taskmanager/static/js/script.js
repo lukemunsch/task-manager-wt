@@ -7,12 +7,17 @@ document.addEventListener('DOMContentLoaded', function () {
   M.Datepicker.init(datepicker, {
     format: "dd mmmm, yyyy",
     i18n: {
-      done: "Select"
+     done: "Select"
     }
   });
 
   // select list input
   let selects = document.querySelectorAll('select');
   M.FormSelect.init(selects);
+
+  // collapsible content
+  let collapsibles = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsibles);
+
 
 });
